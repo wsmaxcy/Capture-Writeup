@@ -12,7 +12,7 @@ When I first saw the login screen on the web application, my assumptions were co
 
 ![App Screenshot](https://willmaxcy.com/assets/imgs/capture/1.png?text=First+Pic)
 
-I saw trying to login with wrong credentials left an error at the bottom of the page.
+I saw that trying to login with wrong credentials left an error at the bottom of the page.
 
 ![App Screenshot](https://willmaxcy.com/assets/imgs/capture/2.png?text=Second+Pic)
 
@@ -28,22 +28,22 @@ Here I used the `usernames.txt` to enumerate the usernames. After trying this fo
 
 ![App Screenshot](https://willmaxcy.com/assets/imgs/capture/5.png?text=Fifth+Pic)
 
-A captcha! Uh-oh. I've never dealth with breaking one of these before. After playing around in Brup Suite a while longer, I learned that the captcha from the previous page was the answer for the new login page. So the data needed to post correctly would be `username`, `password`, and `captcha`. In order to crack this login, it seems that I would have to write a custom script.
+A captcha! Uh-oh. I've never dealt with breaking one of these before. After playing around in Burp Suite a while longer, I learned that the captcha from the previous page was the answer for the new login page. So the data needed to post correctly would be `username`, `password`, and `captcha`. In order to crack this login, it seems that I would have to write a custom script.
 
 ## Scripting
 
-From what I learned about the web application, I had to create a script that would do the follwoing:
+From what I learned about the web application, I had to create a script that would do the following:
 
  - [ ]  Load both `usernames.txt` and `passwords.txt` into the program.
  - [ ]  Trigger the captcha.
  - [ ]  Find way to identify the elements in the captcha:
    - [ ]  Opperands
-   - [ ]  Opperant
+   - [ ]  Operant
  - [ ]  Send correct captcha to the server while enumerating `usernames.txt`.
  - [ ]  Once username is found, enumerate `passwords.txt`
  - [ ]  Print out correct username and password.
 
-I used these tasks to break about my code into smaller parts. The actual code is available at the top of this page, but you can also access it [here](https://github.com/wsmaxcy/capture/blob/master/capture.py).
+I used these tasks to break my code into smaller parts. The actual code is available at the top of this page, but you can also access it [here](https://github.com/wsmaxcy/capture/blob/master/capture.py).
 
  - [X]  Load both `usernames.txt` and `passwords.txt` into the program.
 ```python
@@ -79,7 +79,7 @@ for i in range(10):
 ```
  - [x]  Find way to identify the elements in the captcha:
    - [x]  Opperands
-   - [x]  Opperant
+   - [x]  Operant
 ```python
 # username and password
 person = ''
