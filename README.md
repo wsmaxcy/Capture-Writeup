@@ -43,7 +43,7 @@ From what I learned about the web application, I had to create a script that wou
  - [ ]  Once username is found, enumerate `passwords.txt`
  - [ ]  Print out correct username and password.
 
-I used these tasks to break about my code into smaller parts. The actual code is available at the top of this page, but you can also access it [here](https://github.com/wsmaxcy/capture/capture.py).
+I used these tasks to break about my code into smaller parts. The actual code is available at the top of this page, but you can also access it [here](https://github.com/wsmaxcy/capture/blob/master/capture.py).
 
  - [X]  Load both `usernames.txt` and `passwords.txt` into the program.
 ```python
