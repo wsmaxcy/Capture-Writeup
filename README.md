@@ -1,7 +1,7 @@
 
 # Capture! CTF from TryHackMe Walkthrough
 
-Welcome! Thanks for checking out my walkthrough. This room was simple to understand, but needed a little bit of custom automation that could potentially take longer than some rooms. I will walkthrough what I did in order to crack the username and password for this website.
+Welcome! Thanks for checking out my walkthrough. This room was simple to understand, but needed a little bit of custom automation that could potentially take longer than some rooms. I will walkthrough what I did in order to crack the username and password for this website. [Here is the link to the CTF on TryHackMe](https://tryhackme.com/r/room/catpictures2).
 
 
 ## Recon
